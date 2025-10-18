@@ -1,0 +1,38 @@
+{
+  "name": "secret-poker-fhe",
+  "version": "1.0.0",
+  "description": "A fully on-chain poker game using FHEVM for encrypted card dealing and betting",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.js",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "poker",
+    "fhevm",
+    "zama",
+    "blockchain",
+    "encryption",
+    "dapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "hardhat": "^2.19.0",
+    "chai": "^4.3.10",
+    "ethers": "^6.9.0"
+  },
+  "dependencies": {
+    "fhevm": "^0.5.0",
+    "fhevm-contracts": "^0.5.0"
+  }
+}
+

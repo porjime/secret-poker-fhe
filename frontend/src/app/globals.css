@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-poker-dark text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-poker-gold text-poker-dark font-bold py-3 px-6 rounded-lg 
+           hover:bg-yellow-500 transition-all duration-200 shadow-lg 
+           hover:shadow-xl active:scale-95;
+  }
+  
+  .btn-secondary {
+    @apply bg-poker-blue text-white font-semibold py-2 px-5 rounded-lg 
+           hover:bg-blue-700 transition-all duration-200 border-2 border-blue-400;
+  }
+  
+  .btn-danger {
+    @apply bg-poker-red text-white font-semibold py-2 px-5 rounded-lg 
+           hover:bg-red-700 transition-all duration-200;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-2xl p-1 w-16 h-24 flex items-center 
+           justify-center text-4xl font-bold transition-transform hover:scale-105;
+  }
+  
+  .card-back {
+    @apply bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg shadow-2xl 
+           p-1 w-16 h-24 flex items-center justify-center border-2 border-blue-400;
+  }
+  
+  .poker-table {
+    @apply bg-poker-felt rounded-full border-8 border-amber-900 shadow-2xl 
+           relative p-12;
+  }
+  
+  .player-spot {
+    @apply absolute bg-poker-dark bg-opacity-50 rounded-lg p-4 border-2 
+           border-amber-700 shadow-lg backdrop-blur-sm;
+  }
+  
+  .chip-stack {
+    @apply inline-flex items-center gap-1 bg-opacity-80 px-3 py-1 rounded-full 
+           font-bold text-sm shadow-md;
+  }
+}
+
