@@ -15,8 +15,8 @@ export default function Home() {
   const [contract, setContract] = useState<ethers.Contract | null>(null)
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && window.ethereum) {
-      const web3Provider = new ethers.BrowserProvider(window.ethereum)
+    if (typeof window !== 'undefined' && (window as any).ethereum) {
+      const web3Provider = new ethers.BrowserProvider((window as any).ethereum)
       setProvider(web3Provider)
     }
   }, [])
